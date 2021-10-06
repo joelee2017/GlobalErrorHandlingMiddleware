@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "MvcMovie\MvcMovie.csproj", "{12FB91EC-195D-4561-B431-FFD5D231A2D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{3399C235-C254-4458-8AF6-090AC8AE8A1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{97CA25E9-E9B3-4B5E-9677-38BFD5392184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12FB91EC-195D-4561-B431-FFD5D231A2D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FB91EC-195D-4561-B431-FFD5D231A2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FB91EC-195D-4561-B431-FFD5D231A2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FB91EC-195D-4561-B431-FFD5D231A2D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3399C235-C254-4458-8AF6-090AC8AE8A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3399C235-C254-4458-8AF6-090AC8AE8A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3399C235-C254-4458-8AF6-090AC8AE8A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3399C235-C254-4458-8AF6-090AC8AE8A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97CA25E9-E9B3-4B5E-9677-38BFD5392184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CA25E9-E9B3-4B5E-9677-38BFD5392184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CA25E9-E9B3-4B5E-9677-38BFD5392184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CA25E9-E9B3-4B5E-9677-38BFD5392184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8011F0E1-55DC-4B7A-B9EB-5A84A275EF61}
+	EndGlobalSection
+EndGlobal
