@@ -1,0 +1,2 @@
+# GlobalErrorHandlingMiddleware
+練習Exception 全局處理
