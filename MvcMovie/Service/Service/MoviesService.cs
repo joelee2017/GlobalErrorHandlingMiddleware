@@ -36,6 +36,7 @@ namespace Service.Service
 
         public IEnumerable<MovieViewModel> Search(string movieGenre, string searchString)
         {
+            throw new System.Exception("This is exception sample from Search().");
             var movies = from m in _movieRepository.GetAll()
                          select m;
 

@@ -5,9 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Model.Data;
-using Model.Models;
 using MvcMovie.Helper;
-using Service.Service;
+using MvcMovie.Middleware;
 
 namespace MvcMovie
 {
@@ -23,6 +22,7 @@ namespace MvcMovie
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllersWithViews();
             // ¥[¤J AutoMapper
 
@@ -40,6 +40,7 @@ namespace MvcMovie
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -56,6 +57,10 @@ namespace MvcMovie
             app.UseRouting();
 
             app.UseAuthorization();
+
+            // µù¥UGlobalErrorHandlingMiddleware
+            //app.UseMiddleware<GlobalErrorHandlingMiddleware>();
+            app.UseExceptionHandleMiddleware();
 
             app.UseEndpoints(endpoints =>
             {

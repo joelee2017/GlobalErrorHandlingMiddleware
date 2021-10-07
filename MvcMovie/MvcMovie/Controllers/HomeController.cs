@@ -21,7 +21,8 @@ namespace MvcMovie.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            throw new System.Exception("This is exception sample from Privacy().");
+            //return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
